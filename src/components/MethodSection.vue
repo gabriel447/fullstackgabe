@@ -7,7 +7,9 @@
 
     <div class="method__grid">
       <div class="method__card">
-        <img :src="empathyPhoto" alt="Empathy phase" class="method__img" />
+        <div class="method__img-wrap">
+          <img :src="empathyPhoto" alt="Empathy phase" class="method__img" />
+        </div>
         <h3 class="method__phase">Phase 1: Empathy</h3>
         <p class="method__text">
           This is the <strong>discovery phase</strong>. My goal is to fully understand the user's world.
@@ -25,11 +27,15 @@
           quantity over quality, generating as many ideas as possible—even the wild or seemingly
           unfeasible ones. This is where I connect the user's needs with innovative possibilities.
         </p>
-        <img :src="ideationPhoto" alt="Ideation phase" class="method__img" />
+        <div class="method__img-wrap">
+          <img :src="ideationPhoto" alt="Ideation phase" class="method__img" />
+        </div>
       </div>
 
       <div class="method__card">
-        <img :src="experimentPhoto" alt="Experimentation phase" class="method__img" />
+        <div class="method__img-wrap">
+          <img :src="experimentPhoto" alt="Experimentation phase" class="method__img" />
+        </div>
         <h3 class="method__phase">Phase 3: Experimentation</h3>
         <p class="method__text">
           This is the <strong>validation phase</strong>. I take the best ideas from the ideation phase
@@ -89,17 +95,23 @@ import experimentPhoto from '../assets/business-team-working-colleagues-successf
   gap: 1.2rem;
 }
 
+.method__img-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
 .method__img {
   width: 100%;
-  border-radius: 8px;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 4/3;
-  transition: filter 0.4s;
   filter: grayscale(15%);
+  transition: filter 0.4s, transform 0.5s ease;
 }
 
 .method__card:hover .method__img {
   filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .method__phase {
@@ -126,5 +138,9 @@ import experimentPhoto from '../assets/business-team-working-colleagues-successf
     max-width: 560px;
     margin: 0 auto;
   }
+
+  .method__card .method__phase { order: 2; }
+  .method__card .method__text  { order: 3; }
+  .method__card .method__img   { order: 1; }
 }
 </style>

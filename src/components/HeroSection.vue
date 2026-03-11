@@ -325,6 +325,11 @@ import tabletPhoto from '../assets/business-people-using-a-tablet-e1660837616242
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.hero__round-img:hover img {
+  transform: scale(1.05);
 }
 
 @media (max-width: 900px) {

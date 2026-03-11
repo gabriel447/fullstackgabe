@@ -178,6 +178,8 @@ import ctaPhoto from '../assets/handsome-man-on-street-of-city.jpg'
 
   .cta__photo-wrap {
     order: 1;
+    width: 200px;
+    height: 200px;
   }
 
   .cta__right {

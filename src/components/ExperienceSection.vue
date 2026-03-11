@@ -203,5 +203,40 @@ const eduItems = [
   .experience__badge {
     display: none;
   }
+
+  .experience__body {
+    padding: 0 1rem;
+  }
+
+  .experience__group-title {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .experience__timeline::before {
+    display: none;
+  }
+
+  .experience__item {
+    padding: 1rem 1.2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .experience__item:last-child {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 0;
+  }
+
+  .experience__dot-col {
+    display: none;
+  }
+
+  .experience__content {
+    align-items: center;
+    text-align: center;
+  }
 }
 </style>

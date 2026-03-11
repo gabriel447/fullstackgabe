@@ -173,12 +173,29 @@ onMounted(() => {
 
 @media (max-width: 640px) {
   .skills__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .skills__ring-wrap {
-    width: 150px;
-    height: 150px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .skills__icon {
+    width: 56px;
+    filter: grayscale(0%);
+  }
+
+  .skills__ring-progress {
+    stroke: var(--skill-color);
+  }
+
+  .skills__percent {
+    font-size: 1.6rem;
+  }
+
+  .skills__name {
+    font-size: 0.7rem;
   }
 }
 </style>
