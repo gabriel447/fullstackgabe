@@ -94,12 +94,14 @@ import ctaPhoto from '../assets/handsome-man-on-street-of-city.jpg'
   padding: 1rem 2rem;
   border-radius: 999px;
   border: 1.5px solid var(--color-white);
+  background: transparent;
   color: var(--color-white);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   transition: background 0.25s, color 0.25s;
   width: fit-content;
+  cursor: pointer;
 }
 
 .cta__btn:hover {
