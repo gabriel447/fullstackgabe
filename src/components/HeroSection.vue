@@ -103,6 +103,7 @@ import profilePhoto from '../assets/54693114.jpeg'
 .hero__left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -116,7 +117,7 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 .hero__wave {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .hero__wave svg {
@@ -134,7 +135,7 @@ import profilePhoto from '../assets/54693114.jpeg'
 .hero__stat {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -160,6 +161,7 @@ import profilePhoto from '../assets/54693114.jpeg'
   color: var(--color-gray-mid);
   text-transform: uppercase;
   line-height: 1.5;
+  text-align: center;
 }
 
 .hero__center {
