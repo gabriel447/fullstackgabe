@@ -50,7 +50,7 @@
 <script setup>
 const workItems = [
   { year: '2024 – 2025', role: 'Fullstack Developer', company: 'Novagne' },
-  { year: '2023 – 2024', role: 'IT Support Specialist', company: 'Novagne' },
+  { year: '2023 – 2024', role: 'IT Support Analyst', company: 'Novagne' },
 ]
 
 const eduItems = [
