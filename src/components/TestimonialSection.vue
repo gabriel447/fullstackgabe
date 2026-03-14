@@ -5,49 +5,48 @@
       <h2 class="testimonial__title">Testimonial Client</h2>
     </div>
 
-    <div class="testimonial__carousel">
-      <button class="testimonial__arrow testimonial__arrow--prev" @click="prev" aria-label="Previous">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+    <div class="testimonial__wrapper"
+      @touchstart="onTouchStart"
+      @touchend="onTouchEnd"
+    >
+      <transition name="fade" mode="out-in">
+        <div :key="current" class="testimonial__slide">
+          <div class="testimonial__quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial__quote">{{ testimonials[current].quote }}</p>
+          <div class="testimonial__author">
+            <img :src="testimonials[current].photo" :alt="testimonials[current].name" class="testimonial__photo" />
+            <div class="testimonial__author-info">
+              <p class="testimonial__name">{{ testimonials[current].name }}</p>
+              <p class="testimonial__role">{{ testimonials[current].role }}</p>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </div>
+
+    <div class="testimonial__controls">
+      <button class="testimonial__arrow" @click="prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
           <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
 
-      <div class="testimonial__content">
-        <transition name="fade" mode="out-in">
-          <div :key="current" class="testimonial__slide">
-            <div class="testimonial__quote-mark" aria-hidden="true">&ldquo;</div>
-            <p class="testimonial__quote">{{ testimonials[current].quote }}</p>
-            <div class="testimonial__author">
-              <img
-                :src="testimonials[current].photo"
-                :alt="testimonials[current].name"
-                class="testimonial__photo"
-              />
-              <div class="testimonial__author-info">
-                <p class="testimonial__name">{{ testimonials[current].name }}</p>
-                <p class="testimonial__role">{{ testimonials[current].role }}</p>
-              </div>
-            </div>
-          </div>
-        </transition>
+      <div class="testimonial__dots">
+        <button
+          v-for="(_, i) in testimonials"
+          :key="i"
+          class="testimonial__dot"
+          :class="{ 'testimonial__dot--active': i === current }"
+          @click="current = i"
+          :aria-label="`Testimonial ${i + 1}`"
+        />
       </div>
 
-      <button class="testimonial__arrow testimonial__arrow--next" @click="next" aria-label="Next">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22">
+      <button class="testimonial__arrow" @click="next" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
           <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </button>
-    </div>
-
-    <div class="testimonial__dots">
-      <button
-        v-for="(_, i) in testimonials"
-        :key="i"
-        class="testimonial__dot"
-        :class="{ 'testimonial__dot--active': i === current }"
-        @click="current = i"
-        :aria-label="`Go to testimonial ${i + 1}`"
-      />
     </div>
   </section>
 </template>
@@ -83,6 +82,7 @@ const testimonials = [
 ]
 
 const current = ref(0)
+let touchStartX = 0
 
 function prev() {
   current.value = (current.value - 1 + testimonials.length) % testimonials.length
@@ -90,6 +90,15 @@ function prev() {
 
 function next() {
   current.value = (current.value + 1) % testimonials.length
+}
+
+function onTouchStart(e) {
+  touchStartX = e.touches[0].clientX
+}
+
+function onTouchEnd(e) {
+  const diff = touchStartX - e.changedTouches[0].clientX
+  if (Math.abs(diff) > 40) diff > 0 ? next() : prev()
 }
 </script>
 
@@ -121,52 +130,19 @@ function next() {
   font-weight: 400;
 }
 
-.testimonial__carousel {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+.testimonial__wrapper {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.testimonial__arrow {
-  background: var(--color-white);
-  border: 1px solid var(--color-gray);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--color-gray-dark);
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  flex-shrink: 0;
-}
-
-.testimonial__arrow:hover {
-  background: var(--color-black);
-  color: var(--color-white);
-  border-color: var(--color-black);
-}
-
-.testimonial__content {
-  flex: 1;
-  min-height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .testimonial__slide {
   background: var(--color-white);
   border-radius: 16px;
   padding: 2.5rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
 }
 
 .testimonial__quote-mark {
@@ -189,7 +165,7 @@ function next() {
   align-items: center;
   gap: 0.9rem;
   padding-top: 0.8rem;
-  border-top: 1px solid var(--color-gray-light);
+  border-top: 1px solid #f0f0f0;
 }
 
 .testimonial__photo {
@@ -218,11 +194,39 @@ function next() {
   text-transform: uppercase;
 }
 
+.testimonial__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.testimonial__arrow {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-gray-dark);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.testimonial__arrow:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
 .testimonial__dots {
   display: flex;
-  justify-content: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  align-items: center;
 }
 
 .testimonial__dot {
@@ -242,21 +246,21 @@ function next() {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.35s ease;
 }
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transform: translateY(6px);
 }
 
 @media (max-width: 600px) {
-  .testimonial__carousel {
-    gap: 0.5rem;
+  .testimonial__slide {
+    padding: 2rem 1.6rem;
   }
 
-  .testimonial__slide {
-    padding: 1.8rem 1.4rem;
+  .testimonial__quote {
+    font-size: 1rem;
+    line-height: 1.9;
   }
 }
 </style>

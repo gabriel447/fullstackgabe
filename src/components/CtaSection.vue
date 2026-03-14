@@ -10,12 +10,12 @@
           relationship to<br />
           the next level
         </h2>
-        <a href="mailto:fullstackgabe@gmail.com" class="cta__btn">
+        <button class="cta__btn">
           Let's Talk
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
             <path d="M7 17L17 7M17 7H7M17 7v10"/>
           </svg>
-        </a>
+        </button>
       </div>
 
       <div class="cta__photo-wrap">
@@ -29,7 +29,6 @@
         </p>
         <div class="cta__contact-links">
           <a href="mailto:fullstackgabe@gmail.com" class="cta__contact-link">fullstackgabe@gmail.com</a>
-          <a href="tel:+5541987998159" class="cta__contact-link">+55 41 98799-8159</a>
         </div>
       </div>
     </div>
@@ -178,8 +177,20 @@ import ctaPhoto from '../assets/handsome-man-on-street-of-city.jpg'
 
   .cta__photo-wrap {
     order: 1;
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .cta__heading {
+    font-size: 2.6rem;
+  }
+
+  .cta__quote {
+    font-size: 1.1rem;
+  }
+
+  .cta__contact-link {
+    font-size: 0.9rem;
   }
 
   .cta__right {

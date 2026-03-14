@@ -16,10 +16,7 @@
         </h3>
         <div class="experience__timeline">
           <div v-for="(item, index) in workItems" :key="index" class="experience__item">
-            <div class="experience__dot-col">
-              <div class="experience__dot"></div>
-            </div>
-            <div class="experience__content">
+<div class="experience__content">
               <span class="experience__role">{{ item.role }}</span>
               <span class="experience__company">{{ item.company }}</span>
             </div>
@@ -37,10 +34,7 @@
         </h3>
         <div class="experience__timeline">
           <div v-for="(item, index) in eduItems" :key="index" class="experience__item">
-            <div class="experience__dot-col">
-              <div class="experience__dot"></div>
-            </div>
-            <div class="experience__content">
+<div class="experience__content">
               <span class="experience__role">{{ item.role }}</span>
               <span class="experience__company">{{ item.company }}</span>
             </div>
@@ -112,55 +106,13 @@ const eduItems = [
   gap: 0.45rem;
 }
 
-.experience__timeline {
-  position: relative;
-  padding-left: 0;
-}
-
-.experience__timeline::before {
-  content: '';
-  position: absolute;
-  left: 9px;
-  top: 16px;
-  bottom: 16px;
-  width: 1px;
-  background: var(--color-gray);
-  z-index: 0;
-}
+.experience__timeline {}
 
 .experience__item {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.experience__item:last-child {
-  border-bottom: none;
-}
-
-.experience__dot-col {
-  width: 20px;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.experience__dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--color-white);
-  border: 1.5px solid var(--color-gray);
-  transition: border-color 0.2s, background 0.2s;
-}
-
-.experience__item:hover .experience__dot {
-  border-color: var(--color-black);
-  background: var(--color-black);
+  padding: 0.8rem 0;
 }
 
 .experience__content {
@@ -200,43 +152,13 @@ const eduItems = [
 }
 
 @media (max-width: 600px) {
-  .experience__badge {
-    display: none;
-  }
-
   .experience__body {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .experience__group-title {
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 1rem;
-  }
-
-  .experience__timeline::before {
-    display: none;
-  }
-
-  .experience__item {
-    padding: 1rem 1.2rem;
-    border: 1px solid #ebebeb;
-    border-radius: 10px;
-    margin-bottom: 0.6rem;
-    border-bottom: 1px solid #ebebeb;
-  }
-
-  .experience__item:last-child {
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 0;
-  }
-
-  .experience__dot-col {
-    display: none;
-  }
-
-  .experience__content {
-    align-items: center;
-    text-align: center;
   }
 }
 </style>
