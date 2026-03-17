@@ -2,7 +2,7 @@
   <section id="hero" class="hero">
     <div class="hero__main">
       <div class="hero__left">
-        <h1 class="hero__title">Fullstack<br />Developer</h1>
+        <h1 class="hero__title">Full Stack<br />Developer</h1>
         <div class="hero__wave" aria-hidden="true">
           <svg viewBox="0 0 300 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <polyline
@@ -60,19 +60,24 @@
     </div>
 
     <div class="hero__tags">
-      <span class="hero__tag hero__tag--asterisk">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
-          stroke-linecap="round" aria-hidden="true">
-          <line x1="12" y1="2" x2="12" y2="22" />
-          <line x1="2" y1="7" x2="22" y2="17" />
-          <line x1="2" y1="17" x2="22" y2="7" />
-        </svg>
-      </span>
-      <span class="hero__tag hero__tag--red">FRONT-END</span>
-      <span class="hero__tag hero__tag--black">BACK-END</span>
-      <span class="hero__tag hero__tag--yellow">MOBILE</span>
-      <span class="hero__tag hero__tag--light">DATABASE</span>
-      <span class="hero__tag hero__tag--purple">AI</span>
+      <div class="hero__tags-row">
+        <span class="hero__tag hero__tag--asterisk">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" aria-hidden="true">
+            <line x1="12" y1="2" x2="12" y2="22" />
+            <line x1="2" y1="7" x2="22" y2="17" />
+            <line x1="2" y1="17" x2="22" y2="7" />
+          </svg>
+        </span>
+        <span class="hero__tag hero__tag--red">FRONT-END</span>
+        <span class="hero__tag hero__tag--black">BACK-END</span>
+        <span class="hero__tag hero__tag--yellow">MOBILE</span>
+      </div>
+      <div class="hero__tags-row">
+        <span class="hero__tag hero__tag--light">DATABASE</span>
+        <span class="hero__tag hero__tag--orange">DEVOPS</span>
+        <span class="hero__tag hero__tag--purple">AI</span>
+      </div>
     </div>
 
   </section>
@@ -84,10 +89,10 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 <style scoped>
 .hero {
-  padding: 5rem 8% 4rem;
+  padding: 9rem 8% 6rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 6rem;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -97,19 +102,19 @@ import profilePhoto from '../assets/54693114.jpeg'
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 3rem;
+  gap: 7rem;
 }
 
 .hero__left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3.5rem;
 }
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -129,14 +134,14 @@ import profilePhoto from '../assets/54693114.jpeg'
 .hero__stats {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .hero__stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 .hero__stat-sep {
@@ -148,14 +153,14 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 .hero__stat-num {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-size: clamp(2.2rem, 3.8vw, 3.5rem);
   font-weight: 400;
   line-height: 1;
   vertical-align: baseline;
 }
 
 .hero__stat-label {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   color: var(--color-gray-mid);
@@ -193,7 +198,7 @@ import profilePhoto from '../assets/54693114.jpeg'
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 3rem;
   text-align: center;
 }
 
@@ -206,7 +211,7 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 .hero__bio {
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
   line-height: 1.8;
   color: var(--color-gray-dark);
 }
@@ -231,11 +236,17 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 .hero__tags {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0;
+}
+
+.hero__tags-row {
+  display: flex;
+  gap: 0.75rem;
   align-items: center;
   justify-content: center;
-  padding-top: 2rem;
 }
 
 .hero__tag {
@@ -246,6 +257,7 @@ import profilePhoto from '../assets/54693114.jpeg'
   letter-spacing: 0.06em;
   cursor: default;
   transition: transform 0.15s;
+  white-space: nowrap;
 }
 
 .hero__tag:hover {
@@ -289,13 +301,18 @@ import profilePhoto from '../assets/54693114.jpeg'
   color: white;
 }
 
+.hero__tag--orange {
+  background: var(--color-orange);
+  color: white;
+}
+
 
 @media (max-width: 900px) {
   .hero__main {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .hero__left {
@@ -331,13 +348,28 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 @media (max-width: 480px) {
   .hero {
-    padding: 3rem 5% 2.5rem;
-    gap: 3rem;
+    padding: 3rem 6% 2.5rem;
+    gap: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
   }
 
   .hero__photo-wrap {
-    width: 260px;
-    height: 260px;
+    width: 185px;
+    height: 185px;
+  }
+
+  .hero__left {
+    gap: 1.5rem;
+  }
+
+  .hero__right {
+    gap: 1.2rem;
+  }
+
+  .hero__stats {
+    gap: 2rem;
   }
 
   .hero__title {
@@ -345,21 +377,44 @@ import profilePhoto from '../assets/54693114.jpeg'
   }
 
   .hero__stat-num {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .hero__stat-label {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
+  }
+
+  .hero__asterisk {
+    font-size: 2.8rem;
   }
 
   .hero__bio {
-    font-size: 1.1rem;
-    line-height: 1.9;
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .hero__wave svg {
     width: 100%;
-    max-width: 320px;
+    max-width: 240px;
+  }
+
+  .hero__tag {
+    white-space: nowrap;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.6rem;
+  }
+
+  .hero__tags {
+    gap: 0.4rem;
+  }
+
+  .hero__tags-row {
+    gap: 0.35rem;
+  }
+
+  .hero__tag--asterisk {
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

@@ -9,14 +9,16 @@
 
       <div class="experience__group">
         <h3 class="experience__group-title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" />
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
           </svg>
           Experience
         </h3>
         <div class="experience__timeline">
           <div v-for="(item, index) in workItems" :key="index" class="experience__item">
-<div class="experience__content">
+            <div class="experience__content">
               <span class="experience__role">{{ item.role }}</span>
               <span class="experience__company">{{ item.company }}</span>
             </div>
@@ -27,14 +29,16 @@
 
       <div class="experience__group">
         <h3 class="experience__group-title">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c3 3 9 3 12 0v-5" />
           </svg>
           Education
         </h3>
         <div class="experience__timeline">
           <div v-for="(item, index) in eduItems" :key="index" class="experience__item">
-<div class="experience__content">
+            <div class="experience__content">
               <span class="experience__role">{{ item.role }}</span>
               <span class="experience__company">{{ item.company }}</span>
             </div>
@@ -49,7 +53,7 @@
 
 <script setup>
 const workItems = [
-  { year: '2024 – 2025', role: 'Fullstack Developer', company: 'Novagne' },
+  { year: '2024 – 2025', role: 'Full Stack Developer', company: 'Novagne' },
   { year: '2023 – 2024', role: 'IT Support Analyst', company: 'Novagne' },
 ]
 
