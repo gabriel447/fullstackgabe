@@ -39,20 +39,17 @@
         <div class="hero__socials">
           <a href="https://github.com" target="_blank" class="hero__social" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-              <path
-                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
             </svg>
           </a>
           <a href="https://linkedin.com" target="_blank" class="hero__social" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
           <a href="https://instagram.com" target="_blank" class="hero__social" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
             </svg>
           </a>
         </div>
@@ -60,26 +57,21 @@
     </div>
 
     <div class="hero__tags">
-      <div class="hero__tags-row">
-        <span class="hero__tag hero__tag--asterisk">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" aria-hidden="true">
-            <line x1="12" y1="2" x2="12" y2="22" />
-            <line x1="2" y1="7" x2="22" y2="17" />
-            <line x1="2" y1="17" x2="22" y2="7" />
-          </svg>
-        </span>
-        <span class="hero__tag hero__tag--red">FRONT-END</span>
-        <span class="hero__tag hero__tag--black">BACK-END</span>
-        <span class="hero__tag hero__tag--yellow">MOBILE</span>
-      </div>
-      <div class="hero__tags-row">
-        <span class="hero__tag hero__tag--light">DATABASE</span>
-        <span class="hero__tag hero__tag--orange">DEVOPS</span>
-        <span class="hero__tag hero__tag--purple">AI</span>
-      </div>
+      <span class="hero__tag hero__tag--asterisk">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" aria-hidden="true">
+          <line x1="12" y1="2" x2="12" y2="22" />
+          <line x1="2" y1="7" x2="22" y2="17" />
+          <line x1="2" y1="17" x2="22" y2="7" />
+        </svg>
+      </span>
+      <span class="hero__tag hero__tag--red">FRONT-END</span>
+      <span class="hero__tag hero__tag--black">BACK-END</span>
+      <span class="hero__tag hero__tag--yellow">MOBILE</span>
+      <span class="hero__tag hero__tag--light">DATABASE</span>
+      <span class="hero__tag hero__tag--orange">DEVOPS</span>
+      <span class="hero__tag hero__tag--purple">AI</span>
     </div>
-
   </section>
 </template>
 
@@ -88,33 +80,36 @@ import profilePhoto from '../assets/54693114.jpeg'
 </script>
 
 <style scoped>
+/* ─── Layout base ─── */
 .hero {
-  padding: 9rem 8% 6rem;
+  padding: clamp(3rem, 7vw, 9rem) 8% clamp(2rem, 5vw, 6rem);
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: clamp(2rem, 4.5vw, 6rem);
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .hero__main {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 7rem;
+  gap: clamp(2rem, 5vw, 7rem);
 }
 
+/* ─── Coluna esquerda: título + wave + stats ─── */
 .hero__left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.5rem;
+  gap: clamp(1.2rem, 2.5vw, 3.5rem);
 }
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -126,41 +121,40 @@ import profilePhoto from '../assets/54693114.jpeg'
 }
 
 .hero__wave svg {
-  width: 260px;
-  height: 16px;
+  width: clamp(160px, 18vw, 260px);
+  height: 15px;
   opacity: 0.55;
 }
 
 .hero__stats {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .hero__stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.6rem;
 }
 
 .hero__stat-sep {
   width: 1px;
-  height: 44px;
+  height: clamp(28px, 3.5vw, 44px);
   background: var(--color-gray);
   flex-shrink: 0;
 }
 
 .hero__stat-num {
   font-family: var(--font-serif);
-  font-size: clamp(2.2rem, 3.8vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 400;
   line-height: 1;
-  vertical-align: baseline;
 }
 
 .hero__stat-label {
-  font-size: 0.7rem;
+  font-size: clamp(0.58rem, 0.85vw, 0.7rem);
   font-weight: 600;
   letter-spacing: 0.07em;
   color: var(--color-gray-mid);
@@ -169,14 +163,15 @@ import profilePhoto from '../assets/54693114.jpeg'
   text-align: center;
 }
 
+/* ─── Centro: foto ─── */
 .hero__center {
   display: flex;
   justify-content: center;
 }
 
 .hero__photo-wrap {
-  width: clamp(220px, 26vw, 340px);
-  height: clamp(220px, 26vw, 340px);
+  width: clamp(130px, 22vw, 320px);
+  height: clamp(130px, 22vw, 320px);
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -194,16 +189,17 @@ import profilePhoto from '../assets/54693114.jpeg'
   transform: scale(1.04);
 }
 
+/* ─── Coluna direita: asterisco + bio + sociais ─── */
 .hero__right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: clamp(1rem, 2.5vw, 3rem);
   text-align: center;
 }
 
 .hero__asterisk {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
   font-weight: 200;
   line-height: 1;
   color: var(--color-gray-mid);
@@ -211,14 +207,14 @@ import profilePhoto from '../assets/54693114.jpeg'
 
 .hero__bio {
   font-family: var(--font-serif);
-  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-size: clamp(0.92rem, 1.6vw, 1.25rem);
   line-height: 1.8;
   color: var(--color-gray-dark);
 }
 
 .hero__socials {
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.6rem, 1vw, 1rem);
   justify-content: center;
 }
 
@@ -234,25 +230,19 @@ import profilePhoto from '../assets/54693114.jpeg'
   color: var(--color-black);
 }
 
+/* ─── Tags ─── */
 .hero__tags {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  padding-top: 0;
-}
-
-.hero__tags-row {
-  display: flex;
-  gap: 0.75rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: clamp(0.4rem, 0.7vw, 0.75rem);
 }
 
 .hero__tag {
-  padding: 0.65rem 1.5rem;
+  padding: clamp(0.42rem, 0.65vw, 0.65rem) clamp(0.85rem, 1.4vw, 1.5rem);
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: clamp(0.6rem, 0.85vw, 0.8rem);
   font-weight: 700;
   letter-spacing: 0.06em;
   cursor: default;
@@ -267,8 +257,8 @@ import profilePhoto from '../assets/54693114.jpeg'
 .hero__tag--asterisk {
   background: var(--color-black);
   color: var(--color-white);
-  width: 46px;
-  height: 46px;
+  width: clamp(28px, 3.5vw, 46px);
+  height: clamp(28px, 3.5vw, 46px);
   padding: 0;
   display: inline-flex;
   align-items: center;
@@ -276,243 +266,32 @@ import profilePhoto from '../assets/54693114.jpeg'
   flex-shrink: 0;
 }
 
-.hero__tag--red {
-  background: var(--color-red);
-  color: white;
-}
+.hero__tag--red    { background: var(--color-red);    color: white; }
+.hero__tag--black  { background: var(--color-black);  color: white; }
+.hero__tag--yellow { background: var(--color-yellow); color: var(--color-black); }
+.hero__tag--light  { background: var(--color-gray);   color: var(--color-black); }
+.hero__tag--purple { background: var(--color-purple); color: white; }
+.hero__tag--orange { background: var(--color-orange); color: white; }
 
-.hero__tag--black {
-  background: var(--color-black);
-  color: white;
-}
-
-.hero__tag--yellow {
-  background: var(--color-yellow);
-  color: var(--color-black);
-}
-
-.hero__tag--light {
-  background: var(--color-gray);
-  color: var(--color-black);
-}
-
-.hero__tag--purple {
-  background: var(--color-purple);
-  color: white;
-}
-
-.hero__tag--orange {
-  background: var(--color-orange);
-  color: white;
-}
-
-
-/* Tablets e phones grandes */
-@media (max-width: 900px) {
+/* ─── Breakpoint 1: layout estrutural (tablet / mobile) ─── */
+@media (max-width: 768px) {
   .hero__main {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 
-  .hero__left {
-    align-items: center;
-    order: 2;
-    width: 100%;
-  }
+  .hero__left   { order: 2; align-items: center; width: 100%; }
+  .hero__center { order: 1; }
+  .hero__right  { order: 3; }
 
-  .hero__center {
-    order: 1;
-  }
-
-  .hero__right {
-    order: 3;
-  }
-
-  .hero__wave {
-    justify-content: center;
-  }
-
-  .hero__stats {
-    justify-content: center;
-  }
-
-  .hero__stat {
-    align-items: center;
-  }
-
-  .hero__tags {
-    justify-content: center;
-  }
+  .hero__stats  { justify-content: center; }
+  .hero__stat   { align-items: center; }
 }
 
-/* iPhone XR, 12 Pro e similares (377px–480px) */
-@media (max-width: 480px) {
-  .hero {
-    padding: 4.5rem 7% 2.5rem;
-    gap: 1.6rem;
-  }
-
-  .hero__main {
-    gap: 1.1rem;
-  }
-
-  .hero__photo-wrap {
-    width: 155px;
-    height: 155px;
-  }
-
-  .hero__left {
-    gap: 1rem;
-  }
-
-  .hero__right {
-    gap: 0.9rem;
-  }
-
-  .hero__title {
-    font-size: 2.7rem;
-  }
-
-  .hero__wave svg {
-    width: 200px;
-    height: 13px;
-  }
-
-  .hero__stats {
-    gap: 2.2rem;
-  }
-
-  .hero__stat-num {
-    font-size: 2.5rem;
-  }
-
-  .hero__stat-sep {
-    height: 36px;
-  }
-
-  .hero__stat-label {
-    font-size: 0.63rem;
-  }
-
-  .hero__asterisk {
-    font-size: 2.4rem;
-  }
-
-  .hero__bio {
-    font-size: 0.97rem;
-    line-height: 1.72;
-  }
-
-  .hero__social svg {
-    width: 19px;
-    height: 19px;
-  }
-
-  .hero__tags {
-    gap: 0.48rem;
-  }
-
-  .hero__tags-row {
-    gap: 0.42rem;
-  }
-
-  .hero__tag {
-    padding: 0.48rem 0.95rem;
-    font-size: 0.63rem;
-  }
-
-  .hero__tag--asterisk {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-/* Phones pequenos: iPhone SE (375px, 667px altura) e Galaxy S8+ (360px, 740px) */
+/* ─── Breakpoint 2: telas muito pequenas (SE, S8+) ─── */
 @media (max-width: 376px) {
-  .hero {
-    padding: 4rem 7% 2rem;
-    gap: 1.4rem;
-  }
-
-  .hero__main {
-    gap: 1rem;
-  }
-
-  .hero__photo-wrap {
-    width: 135px;
-    height: 135px;
-  }
-
-  .hero__left {
-    gap: 0.85rem;
-  }
-
-  .hero__right {
-    gap: 0.75rem;
-  }
-
-  .hero__title {
-    font-size: 2.3rem;
-  }
-
-  .hero__wave svg {
-    width: 170px;
-    height: 12px;
-  }
-
-  .hero__stats {
-    gap: 1.8rem;
-  }
-
-  .hero__stat-num {
-    font-size: 2.2rem;
-  }
-
-  .hero__stat-sep {
-    height: 30px;
-  }
-
-  .hero__stat-label {
-    font-size: 0.6rem;
-  }
-
-  /* Esconde o asterisco decorativo em telas muito pequenas */
-  .hero__asterisk {
-    display: none;
-  }
-
-  .hero__bio {
-    font-size: 0.91rem;
-    line-height: 1.68;
-  }
-
-  .hero__social svg {
-    width: 17px;
-    height: 17px;
-  }
-
-  .hero__socials {
-    gap: 0.8rem;
-  }
-
-  .hero__tags {
-    gap: 0.4rem;
-  }
-
-  .hero__tags-row {
-    gap: 0.35rem;
-  }
-
-  .hero__tag {
-    padding: 0.42rem 0.82rem;
-    font-size: 0.6rem;
-  }
-
-  .hero__tag--asterisk {
-    width: 28px;
-    height: 28px;
-  }
+  .hero__asterisk { display: none; }
 }
 </style>

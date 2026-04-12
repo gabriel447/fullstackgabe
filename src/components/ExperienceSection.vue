@@ -114,7 +114,7 @@ const eduItems = [
 
 .experience__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.2rem;
   padding: 0.8rem 0;
 }
