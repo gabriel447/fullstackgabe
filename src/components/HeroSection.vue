@@ -307,6 +307,7 @@ import profilePhoto from '../assets/54693114.jpeg'
 }
 
 
+/* Tablets e phones grandes */
 @media (max-width: 900px) {
   .hero__main {
     grid-template-columns: 1fr;
@@ -346,62 +347,154 @@ import profilePhoto from '../assets/54693114.jpeg'
   }
 }
 
+/* iPhone XR, 12 Pro e similares (377px–480px) */
 @media (max-width: 480px) {
   .hero {
-    padding: 3rem 6% 2.5rem;
-    gap: 2rem;
-    min-height: 100vh;
-    box-sizing: border-box;
-    justify-content: center;
+    padding: 4.5rem 7% 2.5rem;
+    gap: 1.6rem;
+  }
+
+  .hero__main {
+    gap: 1.1rem;
   }
 
   .hero__photo-wrap {
-    width: 185px;
-    height: 185px;
+    width: 155px;
+    height: 155px;
   }
 
   .hero__left {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .hero__right {
-    gap: 1.2rem;
-  }
-
-  .hero__stats {
-    gap: 2rem;
+    gap: 0.9rem;
   }
 
   .hero__title {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
+  }
+
+  .hero__wave svg {
+    width: 200px;
+    height: 13px;
+  }
+
+  .hero__stats {
+    gap: 2.2rem;
   }
 
   .hero__stat-num {
     font-size: 2.5rem;
   }
 
+  .hero__stat-sep {
+    height: 36px;
+  }
+
   .hero__stat-label {
-    font-size: 0.68rem;
+    font-size: 0.63rem;
   }
 
   .hero__asterisk {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .hero__bio {
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: 0.97rem;
+    line-height: 1.72;
   }
 
-  .hero__wave svg {
-    width: 100%;
-    max-width: 240px;
+  .hero__social svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .hero__tags {
+    gap: 0.48rem;
+  }
+
+  .hero__tags-row {
+    gap: 0.42rem;
   }
 
   .hero__tag {
-    white-space: nowrap;
-    padding: 0.4rem 0.75rem;
+    padding: 0.48rem 0.95rem;
+    font-size: 0.63rem;
+  }
+
+  .hero__tag--asterisk {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Phones pequenos: iPhone SE (375px, 667px altura) e Galaxy S8+ (360px, 740px) */
+@media (max-width: 376px) {
+  .hero {
+    padding: 4rem 7% 2rem;
+    gap: 1.4rem;
+  }
+
+  .hero__main {
+    gap: 1rem;
+  }
+
+  .hero__photo-wrap {
+    width: 135px;
+    height: 135px;
+  }
+
+  .hero__left {
+    gap: 0.85rem;
+  }
+
+  .hero__right {
+    gap: 0.75rem;
+  }
+
+  .hero__title {
+    font-size: 2.3rem;
+  }
+
+  .hero__wave svg {
+    width: 170px;
+    height: 12px;
+  }
+
+  .hero__stats {
+    gap: 1.8rem;
+  }
+
+  .hero__stat-num {
+    font-size: 2.2rem;
+  }
+
+  .hero__stat-sep {
+    height: 30px;
+  }
+
+  .hero__stat-label {
     font-size: 0.6rem;
+  }
+
+  /* Esconde o asterisco decorativo em telas muito pequenas */
+  .hero__asterisk {
+    display: none;
+  }
+
+  .hero__bio {
+    font-size: 0.91rem;
+    line-height: 1.68;
+  }
+
+  .hero__social svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hero__socials {
+    gap: 0.8rem;
   }
 
   .hero__tags {
@@ -412,9 +505,14 @@ import profilePhoto from '../assets/54693114.jpeg'
     gap: 0.35rem;
   }
 
+  .hero__tag {
+    padding: 0.42rem 0.82rem;
+    font-size: 0.6rem;
+  }
+
   .hero__tag--asterisk {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
   }
 }
 </style>
