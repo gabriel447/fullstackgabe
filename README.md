@@ -1,3 +1,3 @@
 # fullstackgabe
 
-[https://fullstackgabe.vercel.app/](https://fullstackgabe.vercel.app/)
+https://fullstackgabe.github.io/welcome/
